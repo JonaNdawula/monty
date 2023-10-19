@@ -38,6 +38,7 @@ void divHandler(stack_t **head, unsigned int lineCounter)
 		exit(EXIT_FAILURE);
 	}
 	temp = hd->next->n / hd->n;
+	hd->next->n = temp;
 	*head = hd->next;
 	free(hd);
 }

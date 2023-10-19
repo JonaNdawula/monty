@@ -24,16 +24,16 @@ void pushHandler(stack_t **head, unsigned int lineCounter)
 					lineCounter);
 			fclose(bus.montyFile);
 			free(bus.lineContent);
-			freeStack(head);
+			freeStack(*head);
 			exit(EXIT_FAILURE);
 		}
 	}
 	else
 	{
-		fprintf(stderr, "L%d: usage: push integer\n", limeCounter);
+		fprintf(stderr, "L%d: usage: push integer\n", lineCounter);
 		fclose(bus.montyFile);
 		free(bus.lineContent);
-		freeStack(head);
+		freeStack(*head);
 		exit(EXIT_FAILURE);
 	}
 	n = atoi(bus.argument);

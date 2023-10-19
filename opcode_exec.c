@@ -11,14 +11,14 @@
 int executeInstruction(char *content, stack_t **head,
 		unsigned int lineCounter, FILE *file)
 {
-	Instruction_t opst[] = {
+	instruction_t opst[] = {
 		{"push", pushHandler}, {"pall", pallHandler},
-		{"pint", pintHandler}, {"pop", PopHandler},
+		{"pint", pintHandler}, {"pop", popHandler},
 		{"swap", swapHandler}, {"add", addHandler},
 		{"nop", nopHandler}, {"sub", subHandler},
 		{"div", divHandler}, {"mul", mulHandler},
 		{"mod", modHandler}, {"pchar", pcharHandler},
-		{"pstr", pstrHandler}, {"rotl", rotlHandler},
+		{"pstr", pstrHandler}, {"rotl", rotHandler},
 		{"rotr", rotrHandler}, {"queue", queueHandler},
 		{"stack", stackHandler}, {NULL, NULL}
 	};

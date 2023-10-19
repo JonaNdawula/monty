@@ -13,9 +13,9 @@ void popHandler(stack_t **head, unsigned int lineCounter)
 	{
 		fprintf(stderr, "L%d: can't pop an empty stack\n",
 				lineCounter);
-		flose(bus.montyFile);
+		fclose(bus.montyFile);
 		free(bus.lineContent);
-		freeStack(head);
+		freeStack(*head);
 		exit(EXIT_FAILURE);
 	}
 

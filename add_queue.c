@@ -36,5 +36,16 @@ void addQueue(stack_t **head, int n)
 		new_node->prev = temp;
 
 	}
+}
 
+/**
+ * queueHandler - This function prints the top
+ *@head: The stack head
+ *@counter: represents the line number
+ */
+void queueHandler(stack_t **head, unsigned int lineCounter)
+{
+	(void)head;
+	(void)lineCounter;
+	bus.stackFlag = 1;
 }

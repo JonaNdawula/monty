@@ -15,8 +15,8 @@ void pcharHandler(stack_t **head, unsigned int lineCounter)
 	hd = *head;
 	if (!hd)
 	{
-		fprintf(stderr, "L%d: can't pchar, stack empty\n,
-				lineCounter");
+		fprintf(stderr, "L%d: can't pchar, stack empty\n",
+				lineCounter);
 		fclose(bus.montyFile);
 		free(bus.lineContent);
 		freeStack(*head);
@@ -24,7 +24,7 @@ void pcharHandler(stack_t **head, unsigned int lineCounter)
 	}
 	if (hd->n > 127 || hd->n < 0)
 	{
-		fprintf(stderr, "L%d: can't pchar, value out of range\n"
+		fprintf(stderr, "L%d: can't pchar, value out of range\n",
 				lineCounter);
 		fclose(bus.montyFile);
 		free(bus.lineContent);

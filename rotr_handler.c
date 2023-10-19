@@ -8,7 +8,7 @@
  */
 
 void rotrHandler(stack_t **head,
-		__attribute_((unsued)) unsigned int lineCounter)
+		__attribute__((unused)) unsigned int lineCounter)
 {
 	stack_t *cpy;
 
@@ -22,5 +22,5 @@ void rotrHandler(stack_t **head,
 	cpy->prev->next = NULL;
 	cpy->prev = NULL;
 	(*head)->prev = cpy;
-	(*had) = cpy
+	(*head) = cpy;
 }

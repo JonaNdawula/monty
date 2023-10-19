@@ -14,7 +14,7 @@ void freeStack(stack_t *head)
 	{
 
 		temp = head->next;
-		fre(head);
+		free(head);
 		head = temp;
 	}
 

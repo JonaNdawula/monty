@@ -1,5 +1,6 @@
 #ifndef MONTY_H
 #define MONTY_H
+#define _GNU_SOURCE
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
@@ -58,7 +59,7 @@ typedef struct BusData_s
 
 } BusData_t;
 
-extern BusData_t bus = {NULL, NULL, NULL, 0}; 
+BusData_t bus = {NULL, NULL, NULL, 0};
 
 
 char *customRealloc(char *ptr, unsigned int oldSize, unsigned int newSize);
@@ -69,7 +70,7 @@ void pallHandler(stack_t **head, unsigned int lineNumber);
 void pintHandler(stack_t **head, unsigned int lineNumber);
 int executeInstruction(char *content, stack_t **head,
 		unsigned int lineCounter, FILE *file);
-void freeStack(stack_t **head);
+void freeStack(stack_t *head);
 void popHandler(stack_t **head, unsigned int lineCounter);
 void swapHandler(stack_t **head, unsigned int lineCounter);
 void addHandler(stack_t **head, unsigned int lineCOunter);

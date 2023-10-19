@@ -11,7 +11,7 @@
 void mulHandler(stack_t **head, unsigned int lineCounter)
 {
 	stack_t *hd;
-	int len = 0, temp;
+	int length = 0, temp;
 
 	hd = *head;
 	while (hd)
