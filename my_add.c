@@ -10,6 +10,7 @@ void addHandler(stack_t **head, unsigned int lineCounter)
 	int length = 0;
 	int temp;
 
+	hd = *head;
 	while (hd)
 	{
 
