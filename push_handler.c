@@ -15,7 +15,7 @@ void pushHandler(stack_t **head, unsigned int lineCounter)
 			j++;
 		for (; bus.argument[j] != '\0'; j++)
 		{
-			if (bus.argument[j] > '9' || bus.argument[j] < '0')
+			if (bus.argument[j] > 57 || bus.argument[j] < 48)
 				flag = 1;
 		}
 		if (flag == 1)
