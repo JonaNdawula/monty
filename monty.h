@@ -58,7 +58,7 @@ typedef struct BusData_s
 
 } BusData_t;
 
-extern BusData_t bus = {NULL, NULL, NULL, 0}; 
+BusData_t bus = {NULL, NULL, NULL, 0}; 
 
 
 char *customRealloc(char *ptr, unsigned int oldSize, unsigned int newSize);

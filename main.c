@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	while (read_line > 0)
 	{
 		content = NULL;
-		read_line = customGetStdin(&content, file);
+		read_line = customGetStdin(&content, &size, file);
 		bus.lineContent = content;
 		counter++;
 		if (read_line > 0)
