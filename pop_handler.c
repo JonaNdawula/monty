@@ -9,6 +9,7 @@ void popHandler(stack_t **head, unsigned int lineCounter)
 {
 	stack_t *temp;
 
+
 	if (*head == NULL)
 	{
 		fprintf(stderr, "L%d: can't pop an empty stack\n",

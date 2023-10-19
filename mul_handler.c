@@ -13,6 +13,8 @@ void mulHandler(stack_t **head, unsigned int lineCounter)
 	stack_t *hd;
 	int length = 0, temp;
 
+	BusData_t bus = {NULL, NULL, NULL, 0};
+
 	hd = *head;
 	while (hd)
 	{

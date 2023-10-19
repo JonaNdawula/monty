@@ -59,8 +59,7 @@ typedef struct BusData_s
 
 } BusData_t;
 
-BusData_t bus = {NULL, NULL, NULL, 0};
-
+extern BusData_t bus;
 
 char *customRealloc(char *ptr, unsigned int oldSize, unsigned int newSize);
 ssize_t customGetStdin(char **lineBuffer, int file);
